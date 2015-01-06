@@ -246,7 +246,7 @@
                 setTipopessoaArea('<?php echo $this->getDataFromSession('radio_tipopessoa') ?>');
             }
         <?php endif; ?>
-    Validation.add('validate-email-exist', '<?php echo $this->__('Please enter a valid email address. For example johndoe@domain.com.') ?>', function(value) {
+    Validation.add('validate-email-exist', '<?php echo $this->__('This email already exists!') ?>', function(value) {
         if (checkMail(value)) {
             var ok = false;
             var url = '/onestepcheckout/ajax/check_email/';
